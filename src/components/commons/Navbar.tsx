@@ -14,13 +14,15 @@ const Navbar = (props: Props) => {
   return (
     <>
       <header className="sticky border-b border-black/10 shadow-md">
-        <nav className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-28 mx-auto max-w-7xl">
-          <div className="py-4 flex justify-between items-center">
+        <nav className="px-4 sm:px-6 md:px-6 lg:px-20 xl:px-28 mx-auto max-w-7xl">
+          <div className="py-6 flex justify-between items-center">
             <h2 className="font-bold">CreatorBlocks.com</h2>
-            <ul className="hidden md:flex text-sm font-semibold space-x-4">
+            <ul className="hidden md:flex text-sm font-semibold">
               {navbarLinks.map((l) => (
                 <Link key={l.label} href={l.href}>
-                  <li>{l.label}</li>
+                  <li className="hover:bg-gray-100 p-2 px-4 rounded-sm">
+                    {l.label}
+                  </li>
                 </Link>
               ))}
             </ul>
