@@ -7,9 +7,9 @@ import { TemplateCard } from "./TemplateCard";
 
 interface Props {}
 
-const Templates = (props: Props) => {
+const TemplatesExplorer = (props: Props) => {
   return (
-    <div className="px-2 sm:px-4 md:px-10 lg:px-20 xl:px-28 max-w-7xl mx-auto py-2 md:py-32">
+    <div className="py-2 pt-20 md:pt-32">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-semibold mb-2">
           Launch-ready templates for creators
@@ -37,10 +37,9 @@ const Templates = (props: Props) => {
             />
           ))}
         </div>
-        <Button variant="outline">Browse all templates</Button>
       </div>
     </div>
   );
 };
 
-export default Templates;
+export default TemplatesExplorer;
