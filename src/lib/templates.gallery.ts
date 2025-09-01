@@ -1,6 +1,23 @@
-export const templatesGallery = [
+// lib/templates.gallery.ts
+export type TemplateItem = {
+  label: string; // short name for breadcrumbs/nav
+  title: string; // display title on detail page
+  shortDescription: string; // brief intro on detail page
+  slug: string;
+  src: string;
+  alt: string;
+  category: "template";
+  href: string;
+  sections: string[];
+  tags: string[];
+};
+
+export const templatesGallery: TemplateItem[] = [
   {
-    title: "Template / SaaS Starter",
+    label: "SaaS Starter",
+    title: "SaaS Starter",
+    shortDescription:
+      "A launch-ready SaaS landing built from polished blocks. Customize and ship in minutes.",
     slug: "template-saas-starter",
     src: "/templates/saas-starter.png",
     alt:
@@ -19,7 +36,10 @@ export const templatesGallery = [
     tags: ["saas", "startup", "light"],
   },
   {
-    title: "Template / Creator Portfolio",
+    label: "Creator Portfolio",
+    title: "Creator Portfolio",
+    shortDescription:
+      "A clean portfolio with intro hero, gallery, services, testimonials, and contact.",
     slug: "template-creator-portfolio",
     src: "/templates/portfolio.png",
     alt: "Portfolio with intro hero, gallery, about, services, and contact",
@@ -37,7 +57,10 @@ export const templatesGallery = [
     tags: ["creator", "artist", "portfolio"],
   },
   {
-    title: "Template / Agency Studio",
+    label: "Agency Studio",
+    title: "Agency Studio",
+    shortDescription:
+      "An agency site with services, case studies, process, testimonials, and a strong CTA.",
     slug: "template-agency-studio",
     src: "/templates/agency.png",
     alt: "Agency site with case studies, services, process, and contact CTA",
@@ -55,7 +78,10 @@ export const templatesGallery = [
     tags: ["agency", "studio", "business"],
   },
   {
-    title: "Template / Sales Funnel",
+    label: "Link in Bio",
+    title: "Link in Bio",
+    shortDescription:
+      "A creator hub with avatar, bio, social links, featured content, and newsletter.",
     slug: "template-link-in-bio",
     src: "/templates/sales-funnel.png",
     alt:
@@ -72,7 +98,10 @@ export const templatesGallery = [
     tags: ["creator", "social", "mobile-first"],
   },
   {
-    title: "Template / E-commerce Landing",
+    label: "E-commerce Landing",
+    title: "E-commerce Landing",
+    shortDescription:
+      "Product-focused landing with benefits, gallery, reviews, FAQ, and a purchase CTA.",
     slug: "template-ecommerce-landing",
     src: "/templates/ecommerce.png",
     alt:
@@ -91,7 +120,10 @@ export const templatesGallery = [
     tags: ["ecommerce", "product", "conversion"],
   },
   {
-    title: "Template / Course & Coaching",
+    label: "Course & Coaching",
+    title: "Course & Coaching",
+    shortDescription:
+      "Course/coach landing with outcomes, curriculum, instructor bio, pricing, and FAQ.",
     slug: "template-course-coaching",
     src: "/templates/courses.webp",
     alt:
@@ -110,7 +142,10 @@ export const templatesGallery = [
     tags: ["education", "creator", "info-product"],
   },
   {
-    title: "Template / Mobile App",
+    label: "Mobile App",
+    title: "Mobile App",
+    shortDescription:
+      "App promo with feature highlights, screenshots, testimonials, and store badges.",
     slug: "template-mobile-app",
     src: "/templates/software.jpeg",
     alt: "App promo with feature highlights, screenshots, and store badges",
@@ -127,7 +162,10 @@ export const templatesGallery = [
     tags: ["app", "product", "light"],
   },
   {
-    title: "Template / Event & Workshop",
+    label: "Event & Workshop",
+    title: "Event & Workshop",
+    shortDescription:
+      "Event page with speakers, agenda timeline, location, FAQ, and ticket CTA.",
     slug: "template-event-workshop",
     src: "/templates/event.png",
     alt: "Event page with agenda, speakers, schedule, location, and ticket CTA",
@@ -145,7 +183,10 @@ export const templatesGallery = [
     tags: ["event", "workshop", "ticketing"],
   },
   {
-    title: "Template / Nonprofit & Cause",
+    label: "Nonprofit & Cause",
+    title: "Nonprofit & Cause",
+    shortDescription:
+      "Cause page with mission, impact stats, stories, donate CTA, partners, and newsletter.",
     slug: "template-nonprofit-cause",
     src: "/templates/nonprofit.jpg",
     alt:
@@ -164,7 +205,10 @@ export const templatesGallery = [
     tags: ["nonprofit", "cause", "donations"],
   },
   {
-    title: "Template / Restaurant & Cafe",
+    label: "Restaurant & Cafe",
+    title: "Restaurant & Cafe",
+    shortDescription:
+      "Food venue page with menu highlights, gallery, reviews, hours, location, and booking.",
     slug: "template-restaurant-cafe",
     src: "/templates/cafe.avif",
     alt:
