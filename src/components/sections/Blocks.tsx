@@ -7,7 +7,7 @@ interface Props {}
 
 const Blocks = (props: Props) => {
   return (
-    <div className="py-10 px-2 sm:px-4 md:px-10 lg:px-20 xl:px-28 mx-auto max-w-7xl">
+    <div className="py-10">
       <div className="text-center mb-16">
         <h1 className="text-3xl md:text-5xl font-semibold mb-2">
           Beautifully designed blocks for every page.

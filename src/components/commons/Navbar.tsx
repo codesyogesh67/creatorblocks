@@ -16,7 +16,9 @@ const Navbar = (props: Props) => {
       <header className="sticky border-b border-black/10 shadow-md">
         <nav className="px-4 sm:px-6 md:px-6 lg:px-20 xl:px-28 mx-auto max-w-7xl">
           <div className="py-6 flex justify-between items-center">
-            <h2 className="font-bold">CreatorBlocks.com</h2>
+            <Link href="/">
+              <h2 className="font-bold">CreatorBlocks.com</h2>
+            </Link>
             <ul className="hidden md:flex text-sm font-semibold">
               {navbarLinks.map((l) => (
                 <Link key={l.label} href={l.href}>

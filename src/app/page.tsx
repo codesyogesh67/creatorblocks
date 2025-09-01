@@ -3,18 +3,22 @@ import Navbar from "@/components/commons/Navbar";
 import Hero from "@/components/sections/Hero";
 import Footer from "@/components/commons/Footer";
 import Blocks from "@/components/sections/Blocks";
-import Templates from "@/components/sections/Templates";
+import TemplatesExplorer from "@/components/sections/TemplatesExplorer";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
+      {/* <Navbar /> */}
+      <main className="py-4 px-4 sm:px-6 lg:px-20 xl:px-28 mx-auto max-w-7xl">
         <Hero />
         <Blocks />
-        <Templates />
+        <TemplatesExplorer />
+        <Link href="/templates">
+          <Button variant="outline">Browse all templates</Button>
+        </Link>
       </main>
-      <Footer />
     </>
   );
 }
