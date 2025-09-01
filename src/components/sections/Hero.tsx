@@ -12,6 +12,7 @@ import {
   SiSpotify,
   SiBehance,
 } from "react-icons/si";
+import Link from "next/link";
 
 interface Props {}
 
@@ -37,8 +38,12 @@ const Hero = (props: Props) => {
         starting from scratch.
       </p>
       <div className="mt-8 flex justify-center gap-2">
-        <Button>Browse Blocks</Button>
-        <Button variant="outline">Browse Templates</Button>
+        <Link href="/blocks">
+          <Button>Browse Blocks</Button>
+        </Link>
+        <Link href="/templates">
+          <Button variant="outline">Browse Templates</Button>
+        </Link>
       </div>
       <div className="mt-4 font-bold">
         <span className="text-xs text-muted-foreground block mb-2 mt-2">

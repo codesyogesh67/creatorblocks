@@ -4,6 +4,7 @@ import TemplatesExplorer from "@/components/sections/TemplatesExplorer";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import BlockExplorer from "@/components/sections/BlocksExplorer";
+import PricingSection from "@/components/sections/PricingSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
           <Button variant="outline">Browse all templates</Button>
         </Link>
       </main>
+      <div className="mt-10 bg-primary/10">
+        <PricingSection />
+      </div>
     </>
   );
 }

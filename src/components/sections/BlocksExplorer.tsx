@@ -18,7 +18,7 @@ const BlockExplorer: React.FC<Props> = ({
   subtitle = "Drop-in sections for hero, features, pricing, FAQ, footer, and more. Built with Tailwind and shadcn/ui—easy to customize and reuse.",
 }) => {
   return (
-    <section className="py-2 pt-20 md:pt-32">
+    <section className="py-2 pt-20">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-semibold mb-2">{title}</h2>
         <p className="max-w-2xl mx-auto text-muted-foreground text-sm md:text-base">
