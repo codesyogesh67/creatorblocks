@@ -11,7 +11,7 @@ import { Check, Crown, Sparkles } from "lucide-react";
 export default function PricingSection() {
   return (
     <section className="py-32">
-      <div className="mx-auto max-w-5xl px-4 text-center">
+      <div className="mx-auto max-w-5xl px-4 text-center mb-20">
         <Badge variant="secondary" className="mb-3">
           Unlock All Access
         </Badge>

@@ -5,9 +5,15 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TemplateCard } from "./TemplateCard";
 
-interface Props {}
+interface Props {
+  limit?: number;
+}
 
-const TemplatesExplorer = (props: Props) => {
+const TemplatesExplorer = ({ limit }: Props) => {
+  const items =
+    typeof limit === "number"
+      ? templatesGallery.slice(0, limit)
+      : templatesGallery;
   return (
     <div className="py-2 pt-20 md:pt-32">
       <div className="text-center mb-16">
@@ -23,7 +29,7 @@ const TemplatesExplorer = (props: Props) => {
       </div>
       <div>
         <div className="py-4 grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-6">
-          {templatesGallery.map((t, i) => (
+          {items.map((t, i) => (
             <TemplateCard
               key={t.slug}
               title={t.title}

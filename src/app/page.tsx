@@ -12,11 +12,11 @@ export default function Home() {
       {/* <Navbar /> */}
       <main className="py-4 px-4 sm:px-6 lg:px-20 xl:px-28 mx-auto max-w-7xl">
         <Hero />
-        <BlockExplorer />
+        <BlockExplorer limit={9} />
         <Link href="/blocks">
           <Button variant="outline">Browse all blocks</Button>
         </Link>
-        <TemplatesExplorer />
+        <TemplatesExplorer limit={6} />
         <Link href="/templates">
           <Button variant="outline">Browse all templates</Button>
         </Link>

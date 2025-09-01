@@ -13,7 +13,7 @@ const Navbar = (props: Props) => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <header className="sticky border-b border-black/10 shadow-md">
+      <header className="sticky top-0 z-50 bg-white border-b border-black/10 shadow-md">
         <nav className="px-4 sm:px-6 md:px-6 lg:px-20 xl:px-28 mx-auto max-w-7xl">
           <div className="py-6 flex justify-between items-center">
             <Link href="/">

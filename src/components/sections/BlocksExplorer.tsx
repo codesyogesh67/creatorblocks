@@ -11,12 +11,16 @@ import { blocksGallery } from "@/lib/blocks.gallery";
 type Props = {
   title?: string;
   subtitle?: string;
+  limit?: number;
 };
 
 const BlockExplorer: React.FC<Props> = ({
   title = "Production-ready blocks for your pages",
   subtitle = "Drop-in sections for hero, features, pricing, FAQ, footer, and more. Built with Tailwind and shadcn/ui—easy to customize and reuse.",
+  limit,
 }) => {
+  const items =
+    typeof limit === "number" ? blocksGallery.slice(0, limit) : blocksGallery;
   return (
     <section className="py-2 pt-20">
       <div className="text-center mb-16">
@@ -27,7 +31,7 @@ const BlockExplorer: React.FC<Props> = ({
       </div>
 
       <div className="py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blocksGallery.map((b, i) => (
+        {items.map((b, i) => (
           <BlockCard
             key={b.slug}
             title={b.title}

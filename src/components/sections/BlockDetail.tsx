@@ -26,7 +26,7 @@ export const BlockDetail = ({ blockData }: { blockData: BlockItem }) => {
     setTimeout(() => setCopied(false), 2000);
   };
   return (
-    <section className="py-2 pt-20 md:pt-32">
+    <section className="py-2 pt-20 md:pt-32 mb-20">
       {/* HEADER */}
       <div className="text-center mb-16">
         <h1 className="text-3xl md:text-5xl font-semibold mb-4">{title}</h1>
